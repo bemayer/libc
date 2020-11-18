@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmayer <mayer.benoit@gmai.com>             +#+  +:+       +#+        */
+/*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/14 18:19:19 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/16 20:39:00 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 15:06:19 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*result;
 	int		i;
 
+	if (!s)
+		return (0);
 	if (start < 0 || len <= 0)
 	{
 		if (!(result = malloc(sizeof(char))))

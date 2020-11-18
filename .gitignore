@@ -3,3 +3,4 @@ test*
 *.pdf
 *.o
 .DS_Store
+Icon*

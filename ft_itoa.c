@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmayer <mayer.benoit@gmai.com>             +#+  +:+       +#+        */
+/*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/14 18:18:34 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/16 20:43:17 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 14:57:29 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,12 @@ static int	intlen(long nb)
 	return (result);
 }
 
-static char	*write_nb(long nb, int len, char *result)
+void		write_nb(long nb, int len, char *result)
 {
-	result[len--] = '\0';
+
 	if (nb == 0)
 	{
 		result[0] = '0';
-		return (result);
 	}
 	if (nb < 0)
 	{
@@ -46,7 +45,6 @@ static char	*write_nb(long nb, int len, char *result)
 		nb = nb / 10;
 		len--;
 	}
-	return (result);
 }
 
 char		*ft_itoa(int n)
@@ -59,5 +57,8 @@ char		*ft_itoa(int n)
 	len = intlen(nb);
 	if (!(result = malloc(sizeof(char) * (len + 1))))
 		return (0);
-	return (write_nb(nb, len, result));
+	result[len] = 0;
+	len--;
+	write_nb(nb, len, result);
+	return (result);
 }
