@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/03 16:11:00 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 14:26:38 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 21:59:43 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int		ft_atoi(const char *str)
 
 	result = 0;
 	sign = 1;
+	if (!str)
+		return (0);
 	while (*str == ' ' || *str == '\t' || *str == '\n' ||
 		*str == '\v' || *str == '\f' || *str == '\r')
 		str++;

@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/14 18:19:02 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 14:27:19 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 22:10:08 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!(result = malloc(sizeof(char) * (ft_strlen(s) + 1))))
 		return (0);
 	i = 0;
-	while (s[i])
+	while (s && s[i])
 	{
 		result[i] = f(i, s[i]);
 		i++;

@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/14 18:19:08 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 21:44:26 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 21:54:41 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int		ft_is_set(const char str, char const *set)
 
 char			*ft_strtrim(char const *s1, char const *set)
 {
-	unsigned int	len;
+	int	len;
 
 	if (!s1)
 		return (0);
