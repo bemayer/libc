@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 20:27:24 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 20:10:53 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 20:14:05 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == (char)c)
+		if (s[i] == c)
 			return ((char *)(s + i));
 		i++;
 	}
-	if ((char)c == 0)
+	if (c == 0)
 		return ((char *)(s + i));
 	return (0);
 }
