@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/12 19:09:10 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 22:37:16 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 22:40:46 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,5 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
 		return ;
-	while (!*s)
-	{
-		if (write(fd, s, 1) <= 0)
-			return ;
-	}
-	write(fd, s, 1);
+	write(fd, s, ft_strlen(s));
 }
