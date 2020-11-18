@@ -6,13 +6,13 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 11:01:36 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 19:21:16 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 23:59:55 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		*freestrings(char **result)
+void			*freestrings(char **result)
 {
 	int i;
 
@@ -23,7 +23,7 @@ void		*freestrings(char **result)
 	return (0);
 }
 
-static int	ft_nb_chaine(char *str, char c)
+static int		ft_nb_chaine(char *str, char c)
 {
 	int i;
 	int nb_chaine;

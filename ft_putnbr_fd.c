@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/12 16:53:06 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 23:38:46 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 23:56:13 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (sign)
 		c[i--] = '-';
-	write(fd, c + i + 1, 10 - i);
+	write(fd, c + (i + 1), 10 - i);
 }
