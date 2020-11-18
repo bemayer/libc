@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/14 18:18:34 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 19:50:48 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 20:07:20 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static int	intlen(long nb)
 {
 	int		result;
 
-	result = 1;
+	result = 0;
 	if (nb < 0)
 		result++;
 	while (nb)
