@@ -1,6 +1,6 @@
 NAME	=libft.a
 
-PART1	=$(addprefix Part1/, ft_atoi.c \
+PART1	=ft_atoi.c \
 ft_bzero.c \
 ft_calloc.c \
 ft_isalnum.c \
@@ -23,9 +23,9 @@ ft_strncmp.c \
 ft_strnstr.c \
 ft_strrchr.c \
 ft_tolower.c \
-ft_toupper.c)
+ft_toupper.c
 
-PART2	=$(addprefix Part2/, ft_itoa.c \
+PART2	=ft_itoa.c \
 ft_putchar_fd.c \
 ft_putendl_fd.c \
 ft_putnbr_fd.c \
@@ -34,13 +34,13 @@ ft_split.c \
 ft_strjoin.c \
 ft_strmapi.c \
 ft_strtrim.c \
-ft_substr.c)
+ft_substr.c
 
 SRCS	=$(PART1) $(PART2)
 
 OBJS	=$(SRCS:.c=.o)
 
-BONUS	=$(addprefix Bonus/, ft_lstadd_back.c \
+BONUS	=ft_lstadd_back.c \
 ft_lstadd_front.c \
 ft_lstclear.c \
 ft_lstdelone.c \
@@ -48,7 +48,7 @@ ft_lstiter.c \
 ft_lstlast.c \
 ft_lstmap.c \
 ft_lstnew.c \
-ft_lstsize.c)
+ft_lstsize.c
 
 OBJS.B	=$(BONUS:.c=.o)
 
