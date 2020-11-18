@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 11:01:36 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/19 00:03:20 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/19 00:14:59 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,13 @@ void			*freestrings(char **result)
 
 	i = 0;
 	while (result[i])
+	{
 		free(result[i++]);
+		result[i] = 0;
+		i++;
+	}
 	free(result);
+	result = 0;
 	return (0);
 }
 
