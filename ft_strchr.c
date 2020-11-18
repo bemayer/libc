@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 20:27:02 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 14:26:56 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/18 20:04:43 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,15 @@ char	*ft_strchr(const char *s, int c)
 
 	to_find = c;
 	i = 0;
+	if (!s)
+		return (0);
+	if (to_find == 0)
+		return ((char *)s + i);
 	while (s[i])
 	{
 		if (s[i] == to_find)
 			return ((char *)s + i);
 		i++;
 	}
-	if (s[i] == to_find)
-		return ((char *)s + i);
 	return (0);
 }
