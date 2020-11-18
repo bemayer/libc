@@ -6,21 +6,21 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 11:01:36 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/19 00:23:05 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/19 00:28:23 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void			*freestrings(char **result)
+void			*freestrings(char **result, int nb)
 {
 	int i;
 
 	i = 0;
-	while (result[i])
+	while (i < nb)
 	{
-		free(result[i++]);
 		result[i] = 0;
+		free(result[i]);
 		i++;
 	}
 	return (0);
@@ -78,7 +78,7 @@ static int		ft_allocate_array(char **result, char *str, char c)
 			{
 				if (ft_create_strings(result + j, str + i, c))
 				{
-					freestrings(result);
+					freestrings(result, j);
 					return (1);
 				}
 				j++;
