@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 11:01:36 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/19 00:14:59 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/19 00:23:05 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ void			*freestrings(char **result)
 		result[i] = 0;
 		i++;
 	}
-	free(result);
-	result = 0;
 	return (0);
 }
 
@@ -47,7 +45,7 @@ static int		ft_nb_chaine(char *str, char c)
 	return (nb_chaine);
 }
 
-static void		ft_create_strings(char **result, char *str, char c)
+static int		ft_create_strings(char **result, char *str, char c)
 {
 	int		len;
 
@@ -55,7 +53,7 @@ static void		ft_create_strings(char **result, char *str, char c)
 	while (str[len] && !(str[len] == c))
 		len++;
 	if (!(*result = malloc(sizeof(char) * (len + 1))))
-		return ;
+		return (1);
 	len = 0;
 	while (str[len] && !(str[len] == c))
 	{
@@ -63,9 +61,10 @@ static void		ft_create_strings(char **result, char *str, char c)
 		len++;
 	}
 	(*result)[len] = 0;
+	return (0);
 }
 
-static void		ft_allocate_array(char **result, char *str, char c)
+static int		ft_allocate_array(char **result, char *str, char c)
 {
 	int		i;
 	int		j;
@@ -77,17 +76,17 @@ static void		ft_allocate_array(char **result, char *str, char c)
 		if (!(str[i] == c))
 			if (i == 0 || (str[i - 1] == c))
 			{
-				ft_create_strings(result + j, str + i, c);
-				if (!result[j])
+				if (ft_create_strings(result + j, str + i, c))
 				{
 					freestrings(result);
-					return ;
+					return (1);
 				}
 				j++;
 			}
 		i++;
 	}
 	result[j] = 0;
+	return (0);
 }
 
 char			**ft_split(char const *s, char c)
@@ -99,6 +98,10 @@ char			**ft_split(char const *s, char c)
 	if (!(result = malloc((ft_nb_chaine((char *)s, c) + 1)
 	* sizeof(char **))))
 		return (0);
-	ft_allocate_array(result, (char *)s, c);
+	if (ft_allocate_array(result, (char *)s, c))
+	{
+		free(result);
+		return (0);
+	}
 	return (result);
 }
