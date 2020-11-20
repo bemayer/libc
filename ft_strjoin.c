@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 08:59:21 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 22:09:47 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/19 13:10:46 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 
 	i = 0;
+	if (!s1 || !s2)
+		return (0);
 	if (!(ptr = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))))
 		return (0);
 	while (s1 && *s1)

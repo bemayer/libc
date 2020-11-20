@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/12 19:32:32 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 21:51:31 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/19 13:07:14 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ size_t	ft_strlen(const char *str)
 {
 	int i;
 
-	if (!str)
-		return (0);
 	i = 0;
 	while (str[i])
 		i++;

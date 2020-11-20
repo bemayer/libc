@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/02 14:24:22 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 21:53:49 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/19 13:08:35 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	j = 0;
-	if (!src)
-		return (0);
-	if (!dst)
-		return (ft_strlen(src));
 	if (src[0] == 0 && dstsize == 0)
 		return (0);
 	while (dst[i])
