@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 20:26:00 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 22:06:34 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/21 09:24:10 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		dst_char[i] = src_char[i];
 		if (src_char[i] == (unsigned char)c)
-			return (dst + i + 1);
+			return ((void *)(dst_char + i + 1));
 		i++;
 	}
 	return (0);

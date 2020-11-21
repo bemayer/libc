@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 19:32:38 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 14:25:51 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/21 09:03:12 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = (*lst)->next;
 		ft_lstdelone(tmp, del);
 	}
-	lst = 0;
+	*lst = 0;
 }

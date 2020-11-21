@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 20:27:18 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/19 13:09:50 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/21 09:06:27 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	unsigned int j;
 
 	i = 0;
-	j = 0;
 	if (!*needle)
 		return ((char *)haystack);
 	while (i < len && haystack[i])

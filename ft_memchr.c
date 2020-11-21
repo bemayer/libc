@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 20:26:06 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/18 14:24:50 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/21 09:04:55 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == to_find)
-			return ((void *)str + i);
+			return ((void *)(str + i));
 		i++;
 	}
 	return (0);

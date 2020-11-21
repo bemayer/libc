@@ -6,7 +6,7 @@
 /*   By: bmayer <mayer.benoit@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 11:01:36 by bmayer            #+#    #+#             */
-/*   Updated: 2020/11/19 00:28:23 by bmayer           ###   ########.fr       */
+/*   Updated: 2020/11/21 09:24:48 by bmayer           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ static int		ft_nb_chaine(char *str, char c)
 	int i;
 	int nb_chaine;
 
-	if (!c)
-		return (2);
 	i = 0;
 	nb_chaine = 1;
 	while (str[i])
