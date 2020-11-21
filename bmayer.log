@@ -1,0 +1,408 @@
+.norminette/norminette.rb libft/ft_lstmap.c libft/ft_strlcpy.c libft/ft_isalpha.c libft/ft_substr.c libft/ft_calloc.c libft/ft_memset.c libft/ft_putendl_fd.c libft/ft_putnbr_fd.c libft/ft_atoi.c libft/ft_lstnew.c libft/ft_bzero.c libft/ft_strlcat.c libft/ft_lstclear.c libft/ft_split.c libft/ft_strjoin.c libft/ft_strrchr.c libft/ft_tolower.c libft/ft_memchr.c libft/ft_lstlast.c libft/ft_strlen.c libft/ft_memcmp.c libft/ft_itoa.c libft/ft_memcpy.c libft/ft_strtrim.c libft/ft_isprint.c libft/ft_lstiter.c libft/ft_strmapi.c libft/ft_lstadd_back.c libft/ft_isascii.c libft/ft_lstsize.c libft/ft_putchar_fd.c libft/ft_isdigit.c libft/ft_memccpy.c libft/ft_putstr_fd.c libft/ft_strnstr.c libft/ft_toupper.c libft/ft_strchr.c libft/ft_memmove.c libft/ft_lstdelone.c libft/ft_strdup.c libft/ft_lstadd_front.c libft/ft_isalnum.c libft/ft_strncmp.c libft/libft.h | tee /tmp/at42.norm.txt
+
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_isprint.o -MMD -MP -MF libft_test/ft_isprint.Td  -c -o libft_test/ft_isprint.o libft_test/ft_isprint.c
+mv -f libft_test/ft_isprint.Td libft_test/ft_isprint.d && touch libft_test/ft_isprint.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstmap.o -MMD -MP -MF libft_test/ft_lstmap.Td  -c -o libft_test/ft_lstmap.o libft_test/ft_lstmap.c
+mv -f libft_test/ft_lstmap.Td libft_test/ft_lstmap.d && touch libft_test/ft_lstmap.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_toupper.o -MMD -MP -MF libft_test/ft_toupper.Td  -c -o libft_test/ft_toupper.o libft_test/ft_toupper.c
+mv -f libft_test/ft_toupper.Td libft_test/ft_toupper.d && touch libft_test/ft_toupper.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_putchar_fd.o -MMD -MP -MF libft_test/ft_putchar_fd.Td  -c -o libft_test/ft_putchar_fd.o libft_test/ft_putchar_fd.c
+In file included from libft_test/ft_putchar_fd.c:12:
+libft_test/forbid/forbid.c:49:16: warning: '_forbidden_write' defined but not used [-Wunused-function]
+ static ssize_t _forbidden_write(int fd, const void *buf, size_t n)
+                ^~~~~~~~~~~~~~~~
+mv -f libft_test/ft_putchar_fd.Td libft_test/ft_putchar_fd.d && touch libft_test/ft_putchar_fd.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strlcpy.o -MMD -MP -MF libft_test/ft_strlcpy.Td  -c -o libft_test/ft_strlcpy.o libft_test/ft_strlcpy.c
+mv -f libft_test/ft_strlcpy.Td libft_test/ft_strlcpy.d && touch libft_test/ft_strlcpy.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_memset.o -MMD -MP -MF libft_test/ft_memset.Td  -c -o libft_test/ft_memset.o libft_test/ft_memset.c
+mv -f libft_test/ft_memset.Td libft_test/ft_memset.d && touch libft_test/ft_memset.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstnew.o -MMD -MP -MF libft_test/ft_lstnew.Td  -c -o libft_test/ft_lstnew.o libft_test/ft_lstnew.c
+In file included from libft_test/ft_lstnew.c:11:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_lstnew.Td libft_test/ft_lstnew.d && touch libft_test/ft_lstnew.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstiter.o -MMD -MP -MF libft_test/ft_lstiter.Td  -c -o libft_test/ft_lstiter.o libft_test/ft_lstiter.c
+mv -f libft_test/ft_lstiter.Td libft_test/ft_lstiter.d && touch libft_test/ft_lstiter.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strmapi.o -MMD -MP -MF libft_test/ft_strmapi.Td  -c -o libft_test/ft_strmapi.o libft_test/ft_strmapi.c
+In file included from libft_test/ft_strmapi.c:11:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_strmapi.Td libft_test/ft_strmapi.d && touch libft_test/ft_strmapi.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstadd_back.o -MMD -MP -MF libft_test/ft_lstadd_back.Td  -c -o libft_test/ft_lstadd_back.o libft_test/ft_lstadd_back.c
+mv -f libft_test/ft_lstadd_back.Td libft_test/ft_lstadd_back.d && touch libft_test/ft_lstadd_back.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strlcat.o -MMD -MP -MF libft_test/ft_strlcat.Td  -c -o libft_test/ft_strlcat.o libft_test/ft_strlcat.c
+mv -f libft_test/ft_strlcat.Td libft_test/ft_strlcat.d && touch libft_test/ft_strlcat.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_substr.o -MMD -MP -MF libft_test/ft_substr.Td  -c -o libft_test/ft_substr.o libft_test/ft_substr.c
+In file included from libft_test/ft_substr.c:11:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_substr.Td libft_test/ft_substr.d && touch libft_test/ft_substr.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strchr.o -MMD -MP -MF libft_test/ft_strchr.Td  -c -o libft_test/ft_strchr.o libft_test/ft_strchr.c
+mv -f libft_test/ft_strchr.Td libft_test/ft_strchr.d && touch libft_test/ft_strchr.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstlast.o -MMD -MP -MF libft_test/ft_lstlast.Td  -c -o libft_test/ft_lstlast.o libft_test/ft_lstlast.c
+mv -f libft_test/ft_lstlast.Td libft_test/ft_lstlast.d && touch libft_test/ft_lstlast.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_calloc.o -MMD -MP -MF libft_test/ft_calloc.Td  -c -o libft_test/ft_calloc.o libft_test/ft_calloc.c
+In file included from libft_test/ft_calloc.c:15:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_calloc.Td libft_test/ft_calloc.d && touch libft_test/ft_calloc.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_memmove.o -MMD -MP -MF libft_test/ft_memmove.Td  -c -o libft_test/ft_memmove.o libft_test/ft_memmove.c
+mv -f libft_test/ft_memmove.Td libft_test/ft_memmove.d && touch libft_test/ft_memmove.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strnstr.o -MMD -MP -MF libft_test/ft_strnstr.Td  -c -o libft_test/ft_strnstr.o libft_test/ft_strnstr.c
+mv -f libft_test/ft_strnstr.Td libft_test/ft_strnstr.d && touch libft_test/ft_strnstr.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_bzero.o -MMD -MP -MF libft_test/ft_bzero.Td  -c -o libft_test/ft_bzero.o libft_test/ft_bzero.c
+mv -f libft_test/ft_bzero.Td libft_test/ft_bzero.d && touch libft_test/ft_bzero.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstdelone.o -MMD -MP -MF libft_test/ft_lstdelone.Td  -c -o libft_test/ft_lstdelone.o libft_test/ft_lstdelone.c
+mv -f libft_test/ft_lstdelone.Td libft_test/ft_lstdelone.d && touch libft_test/ft_lstdelone.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_putnbr_fd.o -MMD -MP -MF libft_test/ft_putnbr_fd.Td  -c -o libft_test/ft_putnbr_fd.o libft_test/ft_putnbr_fd.c
+In file included from libft_test/ft_putnbr_fd.c:12:
+libft_test/forbid/forbid.c:49:16: warning: '_forbidden_write' defined but not used [-Wunused-function]
+ static ssize_t _forbidden_write(int fd, const void *buf, size_t n)
+                ^~~~~~~~~~~~~~~~
+mv -f libft_test/ft_putnbr_fd.Td libft_test/ft_putnbr_fd.d && touch libft_test/ft_putnbr_fd.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strlen.o -MMD -MP -MF libft_test/ft_strlen.Td  -c -o libft_test/ft_strlen.o libft_test/ft_strlen.c
+mv -f libft_test/ft_strlen.Td libft_test/ft_strlen.d && touch libft_test/ft_strlen.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_itoa.o -MMD -MP -MF libft_test/ft_itoa.Td  -c -o libft_test/ft_itoa.o libft_test/ft_itoa.c
+In file included from libft_test/ft_itoa.c:11:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_itoa.Td libft_test/ft_itoa.d && touch libft_test/ft_itoa.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_isdigit.o -MMD -MP -MF libft_test/ft_isdigit.Td  -c -o libft_test/ft_isdigit.o libft_test/ft_isdigit.c
+mv -f libft_test/ft_isdigit.Td libft_test/ft_isdigit.d && touch libft_test/ft_isdigit.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_memccpy.o -MMD -MP -MF libft_test/ft_memccpy.Td  -c -o libft_test/ft_memccpy.o libft_test/ft_memccpy.c
+mv -f libft_test/ft_memccpy.Td libft_test/ft_memccpy.d && touch libft_test/ft_memccpy.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_split.o -MMD -MP -MF libft_test/ft_split.Td  -c -o libft_test/ft_split.o libft_test/ft_split.c
+In file included from libft_test/ft_split.c:12:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_split.Td libft_test/ft_split.d && touch libft_test/ft_split.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstadd_front.o -MMD -MP -MF libft_test/ft_lstadd_front.Td  -c -o libft_test/ft_lstadd_front.o libft_test/ft_lstadd_front.c
+mv -f libft_test/ft_lstadd_front.Td libft_test/ft_lstadd_front.d && touch libft_test/ft_lstadd_front.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strjoin.o -MMD -MP -MF libft_test/ft_strjoin.Td  -c -o libft_test/ft_strjoin.o libft_test/ft_strjoin.c
+In file included from libft_test/ft_strjoin.c:11:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_strjoin.Td libft_test/ft_strjoin.d && touch libft_test/ft_strjoin.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strrchr.o -MMD -MP -MF libft_test/ft_strrchr.Td  -c -o libft_test/ft_strrchr.o libft_test/ft_strrchr.c
+mv -f libft_test/ft_strrchr.Td libft_test/ft_strrchr.d && touch libft_test/ft_strrchr.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_memcmp.o -MMD -MP -MF libft_test/ft_memcmp.Td  -c -o libft_test/ft_memcmp.o libft_test/ft_memcmp.c
+mv -f libft_test/ft_memcmp.Td libft_test/ft_memcmp.d && touch libft_test/ft_memcmp.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstsize.o -MMD -MP -MF libft_test/ft_lstsize.Td  -c -o libft_test/ft_lstsize.o libft_test/ft_lstsize.c
+mv -f libft_test/ft_lstsize.Td libft_test/ft_lstsize.d && touch libft_test/ft_lstsize.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_putstr_fd.o -MMD -MP -MF libft_test/ft_putstr_fd.Td  -c -o libft_test/ft_putstr_fd.o libft_test/ft_putstr_fd.c
+In file included from libft_test/ft_putstr_fd.c:12:
+libft_test/forbid/forbid.c:49:16: warning: '_forbidden_write' defined but not used [-Wunused-function]
+ static ssize_t _forbidden_write(int fd, const void *buf, size_t n)
+                ^~~~~~~~~~~~~~~~
+mv -f libft_test/ft_putstr_fd.Td libft_test/ft_putstr_fd.d && touch libft_test/ft_putstr_fd.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_isalnum.o -MMD -MP -MF libft_test/ft_isalnum.Td  -c -o libft_test/ft_isalnum.o libft_test/ft_isalnum.c
+mv -f libft_test/ft_isalnum.Td libft_test/ft_isalnum.d && touch libft_test/ft_isalnum.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_atoi.o -MMD -MP -MF libft_test/ft_atoi.Td  -c -o libft_test/ft_atoi.o libft_test/ft_atoi.c
+mv -f libft_test/ft_atoi.Td libft_test/ft_atoi.d && touch libft_test/ft_atoi.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_memcpy.o -MMD -MP -MF libft_test/ft_memcpy.Td  -c -o libft_test/ft_memcpy.o libft_test/ft_memcpy.c
+mv -f libft_test/ft_memcpy.Td libft_test/ft_memcpy.d && touch libft_test/ft_memcpy.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_isalpha.o -MMD -MP -MF libft_test/ft_isalpha.Td  -c -o libft_test/ft_isalpha.o libft_test/ft_isalpha.c
+mv -f libft_test/ft_isalpha.Td libft_test/ft_isalpha.d && touch libft_test/ft_isalpha.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strtrim.o -MMD -MP -MF libft_test/ft_strtrim.Td  -c -o libft_test/ft_strtrim.o libft_test/ft_strtrim.c
+In file included from libft_test/ft_strtrim.c:11:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_strtrim.Td libft_test/ft_strtrim.d && touch libft_test/ft_strtrim.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_memchr.o -MMD -MP -MF libft_test/ft_memchr.Td  -c -o libft_test/ft_memchr.o libft_test/ft_memchr.c
+mv -f libft_test/ft_memchr.Td libft_test/ft_memchr.d && touch libft_test/ft_memchr.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_tolower.o -MMD -MP -MF libft_test/ft_tolower.Td  -c -o libft_test/ft_tolower.o libft_test/ft_tolower.c
+mv -f libft_test/ft_tolower.Td libft_test/ft_tolower.d && touch libft_test/ft_tolower.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_putendl_fd.o -MMD -MP -MF libft_test/ft_putendl_fd.Td  -c -o libft_test/ft_putendl_fd.o libft_test/ft_putendl_fd.c
+In file included from libft_test/ft_putendl_fd.c:12:
+libft_test/forbid/forbid.c:49:16: warning: '_forbidden_write' defined but not used [-Wunused-function]
+ static ssize_t _forbidden_write(int fd, const void *buf, size_t n)
+                ^~~~~~~~~~~~~~~~
+mv -f libft_test/ft_putendl_fd.Td libft_test/ft_putendl_fd.d && touch libft_test/ft_putendl_fd.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strncmp.o -MMD -MP -MF libft_test/ft_strncmp.Td  -c -o libft_test/ft_strncmp.o libft_test/ft_strncmp.c
+mv -f libft_test/ft_strncmp.Td libft_test/ft_strncmp.d && touch libft_test/ft_strncmp.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_strdup.o -MMD -MP -MF libft_test/ft_strdup.Td  -c -o libft_test/ft_strdup.o libft_test/ft_strdup.c
+In file included from libft_test/ft_strdup.c:15:
+libft_test/forbid/forbid.c:32:14: warning: '_forbidden_malloc' defined but not used [-Wunused-function]
+ static void *_forbidden_malloc(size_t n)
+              ^~~~~~~~~~~~~~~~~
+mv -f libft_test/ft_strdup.Td libft_test/ft_strdup.d && touch libft_test/ft_strdup.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_lstclear.o -MMD -MP -MF libft_test/ft_lstclear.Td  -c -o libft_test/ft_lstclear.o libft_test/ft_lstclear.c
+mv -f libft_test/ft_lstclear.Td libft_test/ft_lstclear.d && touch libft_test/ft_lstclear.o
+gcc -Wall -Wextra -g -fsanitize=address,undefined -MT libft_test/ft_isascii.o -MMD -MP -MF libft_test/ft_isascii.Td  -c -o libft_test/ft_isascii.o libft_test/ft_isascii.c
+mv -f libft_test/ft_isascii.Td libft_test/ft_isascii.d && touch libft_test/ft_isascii.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstmap.o -MMD -MP -MF libft/ft_lstmap.Td  -c -o libft/ft_lstmap.o libft/ft_lstmap.c
+mv -f libft/ft_lstmap.Td libft/ft_lstmap.d && touch libft/ft_lstmap.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_toupper.o -MMD -MP -MF libft/ft_toupper.Td  -c -o libft/ft_toupper.o libft/ft_toupper.c
+mv -f libft/ft_toupper.Td libft/ft_toupper.d && touch libft/ft_toupper.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_putchar_fd.o -MMD -MP -MF libft/ft_putchar_fd.Td  -c -o libft/ft_putchar_fd.o libft/ft_putchar_fd.c
+mv -f libft/ft_putchar_fd.Td libft/ft_putchar_fd.d && touch libft/ft_putchar_fd.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_substr.o -MMD -MP -MF libft/ft_substr.Td  -c -o libft/ft_substr.o libft/ft_substr.c
+mv -f libft/ft_substr.Td libft/ft_substr.d && touch libft/ft_substr.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strlcpy.o -MMD -MP -MF libft/ft_strlcpy.Td  -c -o libft/ft_strlcpy.o libft/ft_strlcpy.c
+mv -f libft/ft_strlcpy.Td libft/ft_strlcpy.d && touch libft/ft_strlcpy.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_memset.o -MMD -MP -MF libft/ft_memset.Td  -c -o libft/ft_memset.o libft/ft_memset.c
+mv -f libft/ft_memset.Td libft/ft_memset.d && touch libft/ft_memset.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstnew.o -MMD -MP -MF libft/ft_lstnew.Td  -c -o libft/ft_lstnew.o libft/ft_lstnew.c
+mv -f libft/ft_lstnew.Td libft/ft_lstnew.d && touch libft/ft_lstnew.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstiter.o -MMD -MP -MF libft/ft_lstiter.Td  -c -o libft/ft_lstiter.o libft/ft_lstiter.c
+mv -f libft/ft_lstiter.Td libft/ft_lstiter.d && touch libft/ft_lstiter.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strmapi.o -MMD -MP -MF libft/ft_strmapi.Td  -c -o libft/ft_strmapi.o libft/ft_strmapi.c
+mv -f libft/ft_strmapi.Td libft/ft_strmapi.d && touch libft/ft_strmapi.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_putendl_fd.o -MMD -MP -MF libft/ft_putendl_fd.Td  -c -o libft/ft_putendl_fd.o libft/ft_putendl_fd.c
+mv -f libft/ft_putendl_fd.Td libft/ft_putendl_fd.d && touch libft/ft_putendl_fd.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strlcat.o -MMD -MP -MF libft/ft_strlcat.Td  -c -o libft/ft_strlcat.o libft/ft_strlcat.c
+mv -f libft/ft_strlcat.Td libft/ft_strlcat.d && touch libft/ft_strlcat.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strchr.o -MMD -MP -MF libft/ft_strchr.Td  -c -o libft/ft_strchr.o libft/ft_strchr.c
+mv -f libft/ft_strchr.Td libft/ft_strchr.d && touch libft/ft_strchr.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstadd_back.o -MMD -MP -MF libft/ft_lstadd_back.Td  -c -o libft/ft_lstadd_back.o libft/ft_lstadd_back.c
+mv -f libft/ft_lstadd_back.Td libft/ft_lstadd_back.d && touch libft/ft_lstadd_back.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstlast.o -MMD -MP -MF libft/ft_lstlast.Td  -c -o libft/ft_lstlast.o libft/ft_lstlast.c
+mv -f libft/ft_lstlast.Td libft/ft_lstlast.d && touch libft/ft_lstlast.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_calloc.o -MMD -MP -MF libft/ft_calloc.Td  -c -o libft/ft_calloc.o libft/ft_calloc.c
+mv -f libft/ft_calloc.Td libft/ft_calloc.d && touch libft/ft_calloc.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_memmove.o -MMD -MP -MF libft/ft_memmove.Td  -c -o libft/ft_memmove.o libft/ft_memmove.c
+mv -f libft/ft_memmove.Td libft/ft_memmove.d && touch libft/ft_memmove.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strnstr.o -MMD -MP -MF libft/ft_strnstr.Td  -c -o libft/ft_strnstr.o libft/ft_strnstr.c
+mv -f libft/ft_strnstr.Td libft/ft_strnstr.d && touch libft/ft_strnstr.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_bzero.o -MMD -MP -MF libft/ft_bzero.Td  -c -o libft/ft_bzero.o libft/ft_bzero.c
+mv -f libft/ft_bzero.Td libft/ft_bzero.d && touch libft/ft_bzero.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstdelone.o -MMD -MP -MF libft/ft_lstdelone.Td  -c -o libft/ft_lstdelone.o libft/ft_lstdelone.c
+mv -f libft/ft_lstdelone.Td libft/ft_lstdelone.d && touch libft/ft_lstdelone.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_putnbr_fd.o -MMD -MP -MF libft/ft_putnbr_fd.Td  -c -o libft/ft_putnbr_fd.o libft/ft_putnbr_fd.c
+mv -f libft/ft_putnbr_fd.Td libft/ft_putnbr_fd.d && touch libft/ft_putnbr_fd.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strlen.o -MMD -MP -MF libft/ft_strlen.Td  -c -o libft/ft_strlen.o libft/ft_strlen.c
+mv -f libft/ft_strlen.Td libft/ft_strlen.d && touch libft/ft_strlen.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_itoa.o -MMD -MP -MF libft/ft_itoa.Td  -c -o libft/ft_itoa.o libft/ft_itoa.c
+mv -f libft/ft_itoa.Td libft/ft_itoa.d && touch libft/ft_itoa.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_isdigit.o -MMD -MP -MF libft/ft_isdigit.Td  -c -o libft/ft_isdigit.o libft/ft_isdigit.c
+mv -f libft/ft_isdigit.Td libft/ft_isdigit.d && touch libft/ft_isdigit.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_memccpy.o -MMD -MP -MF libft/ft_memccpy.Td  -c -o libft/ft_memccpy.o libft/ft_memccpy.c
+mv -f libft/ft_memccpy.Td libft/ft_memccpy.d && touch libft/ft_memccpy.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_split.o -MMD -MP -MF libft/ft_split.Td  -c -o libft/ft_split.o libft/ft_split.c
+mv -f libft/ft_split.Td libft/ft_split.d && touch libft/ft_split.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstadd_front.o -MMD -MP -MF libft/ft_lstadd_front.Td  -c -o libft/ft_lstadd_front.o libft/ft_lstadd_front.c
+mv -f libft/ft_lstadd_front.Td libft/ft_lstadd_front.d && touch libft/ft_lstadd_front.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstclear.o -MMD -MP -MF libft/ft_lstclear.Td  -c -o libft/ft_lstclear.o libft/ft_lstclear.c
+mv -f libft/ft_lstclear.Td libft/ft_lstclear.d && touch libft/ft_lstclear.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strjoin.o -MMD -MP -MF libft/ft_strjoin.Td  -c -o libft/ft_strjoin.o libft/ft_strjoin.c
+mv -f libft/ft_strjoin.Td libft/ft_strjoin.d && touch libft/ft_strjoin.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strrchr.o -MMD -MP -MF libft/ft_strrchr.Td  -c -o libft/ft_strrchr.o libft/ft_strrchr.c
+mv -f libft/ft_strrchr.Td libft/ft_strrchr.d && touch libft/ft_strrchr.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_memcmp.o -MMD -MP -MF libft/ft_memcmp.Td  -c -o libft/ft_memcmp.o libft/ft_memcmp.c
+mv -f libft/ft_memcmp.Td libft/ft_memcmp.d && touch libft/ft_memcmp.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_lstsize.o -MMD -MP -MF libft/ft_lstsize.Td  -c -o libft/ft_lstsize.o libft/ft_lstsize.c
+mv -f libft/ft_lstsize.Td libft/ft_lstsize.d && touch libft/ft_lstsize.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_putstr_fd.o -MMD -MP -MF libft/ft_putstr_fd.Td  -c -o libft/ft_putstr_fd.o libft/ft_putstr_fd.c
+mv -f libft/ft_putstr_fd.Td libft/ft_putstr_fd.d && touch libft/ft_putstr_fd.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_isalnum.o -MMD -MP -MF libft/ft_isalnum.Td  -c -o libft/ft_isalnum.o libft/ft_isalnum.c
+mv -f libft/ft_isalnum.Td libft/ft_isalnum.d && touch libft/ft_isalnum.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_atoi.o -MMD -MP -MF libft/ft_atoi.Td  -c -o libft/ft_atoi.o libft/ft_atoi.c
+mv -f libft/ft_atoi.Td libft/ft_atoi.d && touch libft/ft_atoi.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_memcpy.o -MMD -MP -MF libft/ft_memcpy.Td  -c -o libft/ft_memcpy.o libft/ft_memcpy.c
+mv -f libft/ft_memcpy.Td libft/ft_memcpy.d && touch libft/ft_memcpy.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_isalpha.o -MMD -MP -MF libft/ft_isalpha.Td  -c -o libft/ft_isalpha.o libft/ft_isalpha.c
+mv -f libft/ft_isalpha.Td libft/ft_isalpha.d && touch libft/ft_isalpha.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strtrim.o -MMD -MP -MF libft/ft_strtrim.Td  -c -o libft/ft_strtrim.o libft/ft_strtrim.c
+mv -f libft/ft_strtrim.Td libft/ft_strtrim.d && touch libft/ft_strtrim.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_memchr.o -MMD -MP -MF libft/ft_memchr.Td  -c -o libft/ft_memchr.o libft/ft_memchr.c
+mv -f libft/ft_memchr.Td libft/ft_memchr.d && touch libft/ft_memchr.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_tolower.o -MMD -MP -MF libft/ft_tolower.Td  -c -o libft/ft_tolower.o libft/ft_tolower.c
+mv -f libft/ft_tolower.Td libft/ft_tolower.d && touch libft/ft_tolower.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_isprint.o -MMD -MP -MF libft/ft_isprint.Td  -c -o libft/ft_isprint.o libft/ft_isprint.c
+mv -f libft/ft_isprint.Td libft/ft_isprint.d && touch libft/ft_isprint.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strncmp.o -MMD -MP -MF libft/ft_strncmp.Td  -c -o libft/ft_strncmp.o libft/ft_strncmp.c
+mv -f libft/ft_strncmp.Td libft/ft_strncmp.d && touch libft/ft_strncmp.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_strdup.o -MMD -MP -MF libft/ft_strdup.Td  -c -o libft/ft_strdup.o libft/ft_strdup.c
+mv -f libft/ft_strdup.Td libft/ft_strdup.d && touch libft/ft_strdup.o
+clang -Wall -Wextra -g -fsanitize=address,undefined -Werror -MT libft/ft_isascii.o -MMD -MP -MF libft/ft_isascii.Td  -c -o libft/ft_isascii.o libft/ft_isascii.c
+mv -f libft/ft_isascii.Td libft/ft_isascii.d && touch libft/ft_isascii.o
+cc -Wall -Wextra -g -fsanitize=address,undefined -lcriterion -ldl -lbsd -o test.bin libft_test/ft_isprint.o libft_test/ft_lstmap.o libft_test/ft_toupper.o libft_test/ft_putchar_fd.o libft_test/ft_strlcpy.o libft_test/ft_memset.o libft_test/ft_lstnew.o libft_test/ft_lstiter.o libft_test/ft_strmapi.o libft_test/ft_lstadd_back.o libft_test/ft_strlcat.o libft_test/ft_substr.o libft_test/ft_strchr.o libft_test/ft_lstlast.o libft_test/ft_calloc.o libft_test/ft_memmove.o libft_test/ft_strnstr.o libft_test/ft_bzero.o libft_test/ft_lstdelone.o libft_test/ft_putnbr_fd.o libft_test/ft_strlen.o libft_test/ft_itoa.o libft_test/ft_isdigit.o libft_test/ft_memccpy.o libft_test/ft_split.o libft_test/ft_lstadd_front.o libft_test/ft_strjoin.o libft_test/ft_strrchr.o libft_test/ft_memcmp.o libft_test/ft_lstsize.o libft_test/ft_putstr_fd.o libft_test/ft_isalnum.o libft_test/ft_atoi.o libft_test/ft_memcpy.o libft_test/ft_isalpha.o libft_test/ft_strtrim.o libft_test/ft_memchr.o libft_test/ft_tolower.o libft_test/ft_putendl_fd.o libft_test/ft_strncmp.o libft_test/ft_strdup.o libft_test/ft_lstclear.o libft_test/ft_isascii.o libft_test/rand/byte_array.o libft_test/rand/numbers.o libft_test/rand/strings.o libft_test/rand/utils.o libft_test/utils/utils.o libft/ft_lstmap.o libft/ft_toupper.o libft/ft_putchar_fd.o libft/ft_substr.o libft/ft_strlcpy.o libft/ft_memset.o libft/ft_lstnew.o libft/ft_lstiter.o libft/ft_strmapi.o libft/ft_putendl_fd.o libft/ft_strlcat.o libft/ft_strchr.o libft/ft_lstadd_back.o libft/ft_lstlast.o libft/ft_calloc.o libft/ft_memmove.o libft/ft_strnstr.o libft/ft_bzero.o libft/ft_lstdelone.o libft/ft_putnbr_fd.o libft/ft_strlen.o libft/ft_itoa.o libft/ft_isdigit.o libft/ft_memccpy.o libft/ft_split.o libft/ft_lstadd_front.o libft/ft_lstclear.o libft/ft_strjoin.o libft/ft_strrchr.o libft/ft_memcmp.o libft/ft_lstsize.o libft/ft_putstr_fd.o libft/ft_isalnum.o libft/ft_atoi.o libft/ft_memcpy.o libft/ft_isalpha.o libft/ft_strtrim.o libft/ft_memchr.o libft/ft_tolower.o libft/ft_isprint.o libft/ft_strncmp.o libft/ft_strdup.o libft/ft_isascii.o /usr/lib/libmimick.a
+./test.bin
+[----] libft_test/ft_lstdelone.c:82: Assertion Failed
+[----]   
+[----]   Wrong del usage.
+[----]   
+[FAIL] ft_lstdelone::null_content: (0.00s)
+[WARN] (ft_lstmap:malloc_fail) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+
+=================================================================
+==905==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 4 byte(s) in 1 object(s) allocated from:
+    #0 0x7ffb977c5b78 in __interceptor_malloc (/lib64/libasan.so.5+0xefb78)
+    #1 0x40cf4b in malloc_fail_target libft_test/ft_lstmap.c:148
+    #2 0x40c916 in mmkuser_malloc_mock_fail_stub libft_test/ft_lstmap.c:132
+    #3 0x40ae75 in my_ft_malloc_off libft_test/ft_lstmap.c:112
+    #4 0x5435bd in ft_lstmap libft/ft_lstmap.c:25
+    #5 0x40d4b0 in validate_split_malloc_fail libft_test/ft_lstmap.c:173
+    #6 0x40b33d in ft_lstmap_malloc_fail_impl libft_test/ft_lstmap.c:126
+    #7 0x7ffb973625c6 in criterion_internal_test_main ../src/core/test.c:97
+    #8 0x40b2b0 in ft_lstmap_malloc_fail_jmp libft_test/ft_lstmap.c:123
+    #9 0x7ffb97360e7e in run_test_child ../src/core/runner_coroutine.c:230
+    #10 0x7ffb97370efd in bxfi_main ../subprojects/boxfort/src/sandbox.c:57
+    #11 0x7ffb95e6d6a2 in __libc_start_main (/lib64/libc.so.6+0x236a2)
+
+SUMMARY: AddressSanitizer: 4 byte(s) leaked in 1 allocation(s).
+[WARN] (ft_lstmap:malloc_fail) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+
+=================================================================
+==910==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 8 byte(s) in 2 object(s) allocated from:
+    #0 0x7f1bf8587b78 in __interceptor_malloc (/lib64/libasan.so.5+0xefb78)
+    #1 0x40cf4b in malloc_fail_target libft_test/ft_lstmap.c:148
+    #2 0x40c916 in mmkuser_malloc_mock_fail_stub libft_test/ft_lstmap.c:132
+    #3 0x40ae75 in my_ft_malloc_off libft_test/ft_lstmap.c:112
+    #4 0x5435bd in ft_lstmap libft/ft_lstmap.c:25
+    #5 0x40d4b0 in validate_split_malloc_fail libft_test/ft_lstmap.c:173
+    #6 0x40b33d in ft_lstmap_malloc_fail_impl libft_test/ft_lstmap.c:126
+    #7 0x7f1bf81245c6 in criterion_internal_test_main ../src/core/test.c:97
+    #8 0x40b2b0 in ft_lstmap_malloc_fail_jmp libft_test/ft_lstmap.c:123
+    #9 0x7f1bf8122e7e in run_test_child ../src/core/runner_coroutine.c:230
+    #10 0x7f1bf8132efd in bxfi_main ../subprojects/boxfort/src/sandbox.c:57
+    #11 0x7f1bf6c2f6a2 in __libc_start_main (/lib64/libc.so.6+0x236a2)
+
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 2 allocation(s).
+[WARN] (ft_lstmap:malloc_fail) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+
+=================================================================
+==915==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 12 byte(s) in 3 object(s) allocated from:
+    #0 0x7fbfbaa0bb78 in __interceptor_malloc (/lib64/libasan.so.5+0xefb78)
+    #1 0x40cf4b in malloc_fail_target libft_test/ft_lstmap.c:148
+    #2 0x40c916 in mmkuser_malloc_mock_fail_stub libft_test/ft_lstmap.c:132
+    #3 0x40ae75 in my_ft_malloc_off libft_test/ft_lstmap.c:112
+    #4 0x5435bd in ft_lstmap libft/ft_lstmap.c:25
+    #5 0x40d4b0 in validate_split_malloc_fail libft_test/ft_lstmap.c:173
+    #6 0x40b33d in ft_lstmap_malloc_fail_impl libft_test/ft_lstmap.c:126
+    #7 0x7fbfba5a85c6 in criterion_internal_test_main ../src/core/test.c:97
+    #8 0x40b2b0 in ft_lstmap_malloc_fail_jmp libft_test/ft_lstmap.c:123
+    #9 0x7fbfba5a6e7e in run_test_child ../src/core/runner_coroutine.c:230
+    #10 0x7fbfba5b6efd in bxfi_main ../subprojects/boxfort/src/sandbox.c:57
+    #11 0x7fbfb90b36a2 in __libc_start_main (/lib64/libc.so.6+0x236a2)
+
+SUMMARY: AddressSanitizer: 12 byte(s) leaked in 3 allocation(s).
+[WARN] (ft_lstmap:malloc_fail) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+
+=================================================================
+==920==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 24 byte(s) in 6 object(s) allocated from:
+    #0 0x7f5dfec90b78 in __interceptor_malloc (/lib64/libasan.so.5+0xefb78)
+    #1 0x40cf4b in malloc_fail_target libft_test/ft_lstmap.c:148
+    #2 0x40c916 in mmkuser_malloc_mock_fail_stub libft_test/ft_lstmap.c:132
+    #3 0x40ae75 in my_ft_malloc_off libft_test/ft_lstmap.c:112
+    #4 0x5435bd in ft_lstmap libft/ft_lstmap.c:25
+    #5 0x40d4b0 in validate_split_malloc_fail libft_test/ft_lstmap.c:173
+    #6 0x40b33d in ft_lstmap_malloc_fail_impl libft_test/ft_lstmap.c:126
+    #7 0x7f5dfe82d5c6 in criterion_internal_test_main ../src/core/test.c:97
+    #8 0x40b2b0 in ft_lstmap_malloc_fail_jmp libft_test/ft_lstmap.c:123
+    #9 0x7f5dfe82be7e in run_test_child ../src/core/runner_coroutine.c:230
+    #10 0x7f5dfe83befd in bxfi_main ../subprojects/boxfort/src/sandbox.c:57
+    #11 0x7f5dfd3386a2 in __libc_start_main (/lib64/libc.so.6+0x236a2)
+
+SUMMARY: AddressSanitizer: 24 byte(s) leaked in 6 allocation(s).
+[WARN] (ft_lstmap:malloc_fail) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+
+=================================================================
+==925==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 36 byte(s) in 9 object(s) allocated from:
+    #0 0x7fe84836fb78 in __interceptor_malloc (/lib64/libasan.so.5+0xefb78)
+    #1 0x40cf4b in malloc_fail_target libft_test/ft_lstmap.c:148
+    #2 0x40c916 in mmkuser_malloc_mock_fail_stub libft_test/ft_lstmap.c:132
+    #3 0x40ae75 in my_ft_malloc_off libft_test/ft_lstmap.c:112
+    #4 0x5435bd in ft_lstmap libft/ft_lstmap.c:25
+    #5 0x40d4b0 in validate_split_malloc_fail libft_test/ft_lstmap.c:173
+    #6 0x40b33d in ft_lstmap_malloc_fail_impl libft_test/ft_lstmap.c:126
+    #7 0x7fe847f0c5c6 in criterion_internal_test_main ../src/core/test.c:97
+    #8 0x40b2b0 in ft_lstmap_malloc_fail_jmp libft_test/ft_lstmap.c:123
+    #9 0x7fe847f0ae7e in run_test_child ../src/core/runner_coroutine.c:230
+    #10 0x7fe847f1aefd in bxfi_main ../subprojects/boxfort/src/sandbox.c:57
+    #11 0x7fe846a176a2 in __libc_start_main (/lib64/libc.so.6+0x236a2)
+
+SUMMARY: AddressSanitizer: 36 byte(s) leaked in 9 allocation(s).
+[WARN] (ft_lstmap:malloc_fail) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+
+=================================================================
+==930==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 168 byte(s) in 42 object(s) allocated from:
+    #0 0x7f3d248ecb78 in __interceptor_malloc (/lib64/libasan.so.5+0xefb78)
+    #1 0x40cf4b in malloc_fail_target libft_test/ft_lstmap.c:148
+    #2 0x40c916 in mmkuser_malloc_mock_fail_stub libft_test/ft_lstmap.c:132
+    #3 0x40ae75 in my_ft_malloc_off libft_test/ft_lstmap.c:112
+    #4 0x5435bd in ft_lstmap libft/ft_lstmap.c:25
+    #5 0x40d4b0 in validate_split_malloc_fail libft_test/ft_lstmap.c:173
+    #6 0x40b33d in ft_lstmap_malloc_fail_impl libft_test/ft_lstmap.c:126
+    #7 0x7f3d244895c6 in criterion_internal_test_main ../src/core/test.c:97
+    #8 0x40b2b0 in ft_lstmap_malloc_fail_jmp libft_test/ft_lstmap.c:123
+    #9 0x7f3d24487e7e in run_test_child ../src/core/runner_coroutine.c:230
+    #10 0x7f3d24497efd in bxfi_main ../subprojects/boxfort/src/sandbox.c:57
+    #11 0x7f3d22f946a2 in __libc_start_main (/lib64/libc.so.6+0x236a2)
+
+SUMMARY: AddressSanitizer: 168 byte(s) leaked in 42 allocation(s).
+
+=================================================================
+==1205==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 13 byte(s) in 3 object(s) allocated from:
+    #0 0x7f1d9760fb78 in __interceptor_malloc (/lib64/libasan.so.5+0xefb78)
+    #1 0x4bd825 in malloc_fail_target libft_test/ft_split.c:174
+    #2 0x4baf59 in mmkuser_malloc_mock_supervisor_stub libft_test/ft_split.c:88
+    #3 0x548f6c in ft_create_strings libft/ft_split.c:53
+    #4 0x548afb in ft_allocate_array libft/ft_split.c:77
+    #5 0x548257 in ft_split libft/ft_split.c:99
+    #6 0x4bdc22 in validate_split_malloc_fail libft_test/ft_split.c:189
+    #7 0x4bd56d in ft_split_malloc_fail_impl libft_test/ft_split.c:154
+    #8 0x7f1d971ac5c6 in criterion_internal_test_main ../src/core/test.c:97
+    #9 0x4bd472 in ft_split_malloc_fail_jmp libft_test/ft_split.c:151
+    #10 0x7f1d971aae7e in run_test_child ../src/core/runner_coroutine.c:230
+    #11 0x7f1d971baefd in bxfi_main ../subprojects/boxfort/src/sandbox.c:57
+    #12 0x7f1d95cb76a2 in __libc_start_main (/lib64/libc.so.6+0x236a2)
+
+SUMMARY: AddressSanitizer: 13 byte(s) leaked in 3 allocation(s).
+
+=================================================================
+==1240==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 13 byte(s) in 3 object(s) allocated from:
+    #0 0x7fe695a0cb78 in __interceptor_malloc (/lib64/libasan.so.5+0xefb78)
+    #1 0x4bd825 in malloc_fail_target libft_test/ft_split.c:174
+    #2 0x4baf59 in mmkuser_malloc_mock_supervisor_stub libft_test/ft_split.c:88
+    #3 0x548f6c in ft_create_strings libft/ft_split.c:53
+    #4 0x548afb in ft_allocate_array libft/ft_split.c:77
+    #5 0x548257 in ft_split libft/ft_split.c:99
+    #6 0x4bdc22 in validate_split_malloc_fail libft_test/ft_split.c:189
+    #7 0x4bd56d in ft_split_malloc_fail_impl libft_test/ft_split.c:154
+    #8 0x7fe6955a95c6 in criterion_internal_test_main ../src/core/test.c:97
+    #9 0x4bd472 in ft_split_malloc_fail_jmp libft_test/ft_split.c:151
+    #10 0x7fe6955a7e7e in run_test_child ../src/core/runner_coroutine.c:230
+    #11 0x7fe6955b7efd in bxfi_main ../subprojects/boxfort/src/sandbox.c:57
+    #12 0x7fe6940b46a2 in __libc_start_main (/lib64/libc.so.6+0x236a2)
+
+SUMMARY: AddressSanitizer: 13 byte(s) leaked in 3 allocation(s).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_split:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory).
+[WARN] (ft_substr:malloc_fail) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory
+[WARN] (ft_substr:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory)
+[WARN] (ft_substr:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory)
+[WARN] (ft_substr:simple) Unexpected malloc usage (either calling it too many, or too few times, or allocating too much or not enough memory)
+[====] Synthesis: Tested: 213 | Passing: 212 | Failing: 1 | Crashing: 0 
+make: *** [Makefile:79: test] Error 1
